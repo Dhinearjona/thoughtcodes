@@ -87,7 +87,7 @@
 }
 .cover .cover-desc img {
   width: 100%;
-  height: 20vh;
+  height: 40vh;
 }
 .cover .cover-desc h1 {
   margin: 3rem 0;
@@ -95,10 +95,11 @@
   font-weight: 700;
 }
 .cover .cover-desc p {
-  margin: 0 0.5rem;
+  margin: 0 5%;
   text-align: justify;
 }
 .cover .cover-desc .work-life {
+  margin: 0 5%;
   margin-top: 5rem;
   display: flex;
   align-items: center;
@@ -118,8 +119,14 @@
 }
 
 @media (max-width: 500px) {
+  .cover .cover-desc {
+    margin: 0;
+  }
   .cover .cover-desc h1 {
     margin: 1rem 0;
+  }
+  .cover .cover-desc p {
+    margin: 0;
   }
   .cover .cover-desc .work-life {
     display: block;

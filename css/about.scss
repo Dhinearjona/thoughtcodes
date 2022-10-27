@@ -103,7 +103,7 @@
 
         img {
             width: 100%;
-            height: 20vh;
+            height: 40vh;
         }
 
         h1 {
@@ -113,11 +113,12 @@
         }
 
         p {
-            margin: 0 .5rem;
+            margin: 0 5%;
             text-align: justify;
         }
 
         .work-life {
+            margin: 0 5%;
             margin-top: 5rem;
             display: flex;
             align-items: center;
@@ -148,9 +149,14 @@
     .cover {
 
         .cover-desc {
+            margin: 0;
 
             h1 {
                 margin: 1rem 0;
+            }
+
+            p {
+                margin: 0;
             }
 
             .work-life {

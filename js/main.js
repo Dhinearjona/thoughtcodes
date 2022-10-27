@@ -1,8 +1,19 @@
-hamburger = document.querySelector(".hamburger");
-hamburger.onclick = function() {
-    navBar = document.querySelector(".nav-bar");
-    navBar.classList.toggle("active");
+var sidemenu = document.getElementById("sidemenu");
+
+function openmenu() {
+	sidemenu.style.right = "0";
 }
+
+function closemenu() {
+	sidemenu.style.right = "-500px";
+}
+
+const toggleButton = document.getElementById('toggle-button');
+const navlist = document.getElementById('nav-list');
+
+toggleButton.addEventListener('click', () => {
+	navlist.classList.toggle('active');
+});
 
 var counter = 1;
 setInterval(function(){

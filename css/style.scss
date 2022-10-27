@@ -249,15 +249,22 @@ body {
 
 @media (max-width: 500px) {
     .slider {
-        height: 10rem;
+        height: 15rem;
+    }
+    
+    .slide {
+
+        img {
+            height: 15rem;
+        }
     }
 
     .navigation-manual {
-        margin-top: -34rem;
+        margin-top: -29rem;
     }
 
     .navigation-auto {
-        margin-top: -34rem;
+        margin-top: -29rem;
     }
 }
 

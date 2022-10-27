@@ -84,7 +84,6 @@
 }
 .cover .cover-desc {
   text-align: center;
-  padding: 3rem 10%;
 }
 .cover .cover-desc img {
   width: 100%;
@@ -96,6 +95,7 @@
   font-weight: 700;
 }
 .cover .cover-desc p {
+  margin: 0 0.5rem;
   text-align: justify;
 }
 .cover .cover-desc .work-life {
@@ -125,10 +125,10 @@
     display: block;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     padding: 1rem 1rem;
-    margin-top: 2rem;
+    margin: 1rem 1rem;
   }
   .cover .cover-desc .work-life .work-img img {
-    width: 14rem;
+    width: 16rem;
   }
   .cover .cover-desc .work-life .work-desc {
     margin: 0 0.5rem;

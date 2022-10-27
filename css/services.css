@@ -156,6 +156,7 @@
 }
 .footer {
   justify-content: space-between;
+  display: flex;
   padding: 1.5rem 5%;
   text-align: center;
 }

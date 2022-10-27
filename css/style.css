@@ -14,10 +14,6 @@
   --lightblue: #B4D6FC;
 }
 
-body {
-  background: var(--white);
-}
-
 .navbar {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
   color: var(--black);
@@ -39,10 +35,14 @@ body {
 }
 .navbar a {
   color: var(--black);
+  font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
 }
 .navbar a:hover {
+  color: var(--darkblue);
+}
+.navbar .active {
   color: var(--darkblue);
 }
 .navbar .menu {
@@ -277,6 +277,7 @@ body {
 }
 .services .row {
   padding: 0 10%;
+  margin: 0;
 }
 .services .row .column {
   display: flex;

@@ -3,7 +3,7 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     box-sizing: border-box;
 }
 
@@ -12,11 +12,6 @@
     --white: #FFF;
     --darkblue: #000099;
     --lightblue: #B4D6FC;
-
-}
-
-body {
-    background: var(--white);
 }
 
 .navbar {
@@ -43,6 +38,7 @@ body {
 
 	a {
 		color: var(--black);
+        font-weight: 700;
 		text-transform: uppercase;
 		text-decoration: none;
 
@@ -50,6 +46,10 @@ body {
 			color: var(--darkblue);
 		}
 	}
+
+    .active {
+        color: var(--darkblue);
+    }
 
     .menu {
         display: none;
@@ -59,7 +59,6 @@ body {
             font-size: 24px;
         }
     }
-    
 }
 
 @media (max-width: 768px) {
@@ -351,6 +350,7 @@ body {
 
     .row {
         padding: 0 10%;
+        margin: 0;
 
         .column {
             display: flex;

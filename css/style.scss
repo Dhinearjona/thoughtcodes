@@ -25,29 +25,35 @@ body {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+
 	.nav-list {
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
 	}
+
 	.primary-icon {
 		height: 1rem;
 	}
+    
 	.list-item {
 		display: inline-block;
 		padding: 20px 10px;
 	}
+
 	a {
 		color: var(--black);
-		font-weight: 700;
 		text-transform: uppercase;
 		text-decoration: none;
+
 		&:hover {
 			color: var(--darkblue);
 		}
 	}
+
     .menu {
         display: none;
+
         i {
             color: var(--black);
             font-size: 24px;
@@ -83,6 +89,7 @@ body {
 
 		.active {
 			display: block;
+            z-index: 100;
 		}
 
         .menu {
@@ -208,8 +215,37 @@ body {
 }
 
 @media (max-width: 768px) {
+    .slider {
+        height: 24rem;
+    }
+    .slide {
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    .navigation-manual {
+        margin-top: -20rem;
+    }
+
     .navigation-auto {
-        margin-top: 579px;
+        margin-top: -20rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .slider {
+        height: 10rem;
+    }
+
+    .navigation-manual {
+        margin-top: -34rem;
+    }
+
+    .navigation-auto {
+        margin-top: -34rem;
     }
 }
 
@@ -277,7 +313,6 @@ body {
 
             p {
                 margin: 3rem 1rem;
-                text-align: justify;
             }
         }
     }
@@ -301,13 +336,14 @@ body {
 
         .column {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
 
             .card {
                 padding: 1rem 1rem;
                 margin: 1rem 1rem;
                 width: 18rem;
-                height: 23rem;
+                height: 31rem;
                 align-items: center;
                 transition: .5s;
 
@@ -341,8 +377,8 @@ body {
             .column {
 
                 .card {
-                    margin: 0 .5rem;
-                    height: fit-content;
+                    margin: .5rem .5rem;
+                    height: auto;
 
                     span {
                         font-size: 10px;
@@ -362,6 +398,10 @@ body {
             .column {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
+
+                .card {
+                    height: auto;
+                }
             }
         }
     }

@@ -132,18 +132,12 @@
                 font-weight: 700;
             }
 
-            input {
+            input,
+            textarea {
                 border: 2px solid var(--darkblue);
                 padding: .5rem 4rem;
                 border-radius: 10px;
                 margin: .5rem 0;
-            }
-
-            textarea {
-                padding: .5rem 2.3rem;
-                border-radius: 10px;
-                border: 2px solid var(--darkblue);
-                margin-bottom: .5rem;
             }
 
             a {

@@ -112,17 +112,12 @@
   color: var(--darkblue);
   font-weight: 700;
 }
-.cover .forms form input {
+.cover .forms form input,
+.cover .forms form textarea {
   border: 2px solid var(--darkblue);
   padding: 0.5rem 4rem;
   border-radius: 10px;
   margin: 0.5rem 0;
-}
-.cover .forms form textarea {
-  padding: 0.5rem 2.3rem;
-  border-radius: 10px;
-  border: 2px solid var(--darkblue);
-  margin-bottom: 0.5rem;
 }
 .cover .forms form a {
   background-color: var(--darkblue);

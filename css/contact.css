@@ -150,11 +150,9 @@
     margin: 0 1rem;
     text-align: center;
   }
-  .cover .forms form input {
+  .cover .forms form input,
+.cover .forms form textarea {
     padding: 0.5rem 2.5rem;
-  }
-  .cover .forms form textarea {
-    padding: 0.5rem 1.1rem;
   }
   .cover .forms .side-forms {
     margin: 0 1rem;

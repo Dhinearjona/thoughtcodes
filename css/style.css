@@ -274,6 +274,7 @@
   padding: 2rem 0;
   font-weight: 700;
   color: var(--darkblue);
+  text-transform: uppercase;
 }
 .services .row {
   padding: 0 10%;
@@ -343,6 +344,7 @@
   padding: 2rem 0;
   font-weight: 700;
   color: var(--darkblue);
+  text-transform: uppercase;
 }
 .work .work-life {
   margin-top: 5rem;
@@ -386,6 +388,7 @@
 .customers .customers-title h1 {
   padding: 2rem 0;
   font-weight: 700;
+  text-transform: uppercase;
   color: var(--darkblue);
 }
 .customers .customers-img img {

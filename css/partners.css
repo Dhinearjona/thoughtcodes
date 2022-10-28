@@ -96,6 +96,7 @@
 .cover .cover-desc h1 {
   margin: 3rem 0;
   color: var(--darkblue);
+  text-transform: uppercase;
   font-weight: 700;
 }
 

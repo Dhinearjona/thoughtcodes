@@ -86,74 +86,59 @@
     top: 25px;
   }
 }
-.clients {
+.cover .cover-desc {
   text-align: center;
 }
-.clients .clients-title h1 {
-  padding: 2rem 0;
-  font-weight: 700;
-  text-transform: uppercase;
+.cover .cover-desc h1 {
+  margin: 3rem 0;
   color: var(--darkblue);
+  text-transform: uppercase;
+  font-weight: 700;
 }
-.clients .row {
-  padding: 0 5%;
-  margin: 0;
-}
-.clients .row .column {
+.cover .cover-desc .work-life {
+  margin: 0 5%;
+  margin-top: 5rem;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
+  justify-content: space-between;
 }
-.clients .row .column .card {
-  padding: 1rem 1rem;
-  margin: 1rem 1rem;
-  width: 18rem;
-  height: 32rem;
-  align-items: center;
-  transition: 0.5s;
+.cover .cover-desc .work-life .work-img img {
+  width: 20rem;
+  height: 25rem;
 }
-.clients .row .column .card img {
-  width: 300px;
-  justify-content: center;
+.cover .cover-desc .work-desc {
+  margin: 0 1.5rem;
 }
-.clients .row .column .card span {
-  font-weight: 600;
-}
-.clients .row .column .card p {
-  font-size: 12px;
-}
-.clients .row .column .card:hover {
-  background-color: var(--lightblue);
+.cover .cover-desc .work-desc h1 {
+  font-weight: 700;
+  color: var(--darkblue);
+  text-transform: uppercase;
 }
 
-@media (max-width: 1024px) and (min-width: 769px) {
-  .clients .row {
-    padding: 0 5%;
-  }
-  .clients .row .column .card {
-    margin: 0.5rem 0.5rem;
-    height: auto;
-  }
-  .clients .row .column .card span {
-    font-size: 10px;
-  }
-}
-@media (max-width: 768px) {
-  .clients .row {
-    display: block;
-  }
-  .clients .row .column {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  .clients .row .column .card {
-    height: auto;
-  }
-}
 @media (max-width: 500px) {
-  .clients .row .column {
-    grid-template-columns: 1fr;
+  .cover .cover-desc {
+    margin: 0;
+  }
+  .cover .cover-desc h1 {
+    margin: 1rem 0;
+  }
+  .cover .cover-desc p {
+    margin: 1rem;
+  }
+  .cover .cover-desc .work-life {
+    display: block;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 1rem 1rem;
+    margin: 1rem 1rem;
+  }
+  .cover .cover-desc .work-life .work-img img {
+    width: 16rem;
+  }
+  .cover .cover-desc .work-life .work-desc {
+    margin: 0;
+  }
+  .cover .cover-desc .work-life .work-desc p {
+    margin: 0;
   }
 }
 .footer {

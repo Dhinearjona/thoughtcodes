@@ -86,74 +86,83 @@
     top: 25px;
   }
 }
-.clients {
+.cover .cover-desc {
   text-align: center;
 }
-.clients .clients-title h1 {
-  padding: 2rem 0;
+.cover .cover-desc img {
+  width: 100%;
+  height: 40vh;
+}
+.cover .cover-desc h1 {
+  margin: 3rem 0;
+  color: var(--darkblue);
+  text-transform: uppercase;
   font-weight: 700;
+}
+.cover .forms {
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-around;
+}
+.cover .forms form {
+  text-align: center;
+}
+.cover .forms form h1 {
   text-transform: uppercase;
   color: var(--darkblue);
+  font-weight: 700;
 }
-.clients .row {
-  padding: 0 5%;
-  margin: 0;
+.cover .forms form input {
+  border: 2px solid var(--darkblue);
+  padding: 0.5rem 4rem;
+  border-radius: 10px;
+  margin: 0.5rem 0;
 }
-.clients .row .column {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+.cover .forms form textarea {
+  padding: 0.5rem 2.3rem;
+  border-radius: 10px;
+  border: 2px solid var(--darkblue);
+  margin-bottom: 0.5rem;
 }
-.clients .row .column .card {
-  padding: 1rem 1rem;
-  margin: 1rem 1rem;
-  width: 18rem;
-  height: 32rem;
-  align-items: center;
+.cover .forms form a {
+  background-color: var(--darkblue);
+  padding: 0.5rem 3rem;
+  color: var(--white);
+  text-decoration: none;
+  border-radius: 10px;
   transition: 0.5s;
 }
-.clients .row .column .card img {
-  width: 300px;
-  justify-content: center;
-}
-.clients .row .column .card span {
-  font-weight: 600;
-}
-.clients .row .column .card p {
-  font-size: 12px;
-}
-.clients .row .column .card:hover {
+.cover .forms form a:hover {
+  color: var(--black);
   background-color: var(--lightblue);
 }
+.cover .forms form p {
+  margin-top: 1rem;
+  text-align: center;
+}
+.cover .forms .side-forms {
+  margin-left: 1rem;
+}
+.cover .forms .side-forms p {
+  margin: 2rem 0;
+  text-align: justify;
+}
 
-@media (max-width: 1024px) and (min-width: 769px) {
-  .clients .row {
-    padding: 0 5%;
-  }
-  .clients .row .column .card {
-    margin: 0.5rem 0.5rem;
-    height: auto;
-  }
-  .clients .row .column .card span {
-    font-size: 10px;
-  }
-}
-@media (max-width: 768px) {
-  .clients .row {
-    display: block;
-  }
-  .clients .row .column {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-  .clients .row .column .card {
-    height: auto;
-  }
-}
 @media (max-width: 500px) {
-  .clients .row .column {
-    grid-template-columns: 1fr;
+  .cover .forms {
+    display: block;
+    padding: 0;
+    margin: 0 1rem;
+    text-align: center;
+  }
+  .cover .forms form input {
+    padding: 0.5rem 2.5rem;
+  }
+  .cover .forms form textarea {
+    padding: 0.5rem 1.1rem;
+  }
+  .cover .forms .side-forms {
+    margin: 0 1rem;
   }
 }
 .footer {

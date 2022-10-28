@@ -93,6 +93,7 @@
   padding: 2rem 0;
   font-weight: 700;
   color: var(--darkblue);
+  text-transform: uppercase;
 }
 .services .row {
   padding: 0 10%;

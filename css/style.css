@@ -15,75 +15,101 @@
 }
 
 .navbar {
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-  color: var(--black);
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+  padding: 25px 0;
+  transition: all 0.3s ease;
+}
+.navbar .content {
+  max-width: 1250px;
+  margin: auto;
+  padding: 20px 20px;
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  text-align: center;
+  justify-content: space-between;
 }
-.navbar .nav-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+.navbar img {
+  width: 50%;
 }
-.navbar .primary-icon {
-  height: 1rem;
-}
-.navbar .list-item {
-  display: inline-block;
-  padding: 20px 10px;
-}
-.navbar a {
-  color: var(--black);
-  font-weight: 700;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-.navbar a:hover {
-  color: var(--darkblue);
-}
-.navbar .active {
-  color: var(--darkblue);
-}
-.navbar .menu {
+.navbar .menu-list {
   display: none;
 }
-.navbar .menu i {
+.navbar .menu-list li {
+  list-style: none;
+}
+.navbar .menu-list a {
   color: var(--black);
-  font-size: 24px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.navbar .menu-list a:hover {
+  color: var(--darkblue);
+}
+.navbar .menu-list .cancel-btn {
+  position: absolute;
+  right: 30px;
+  top: 20px;
 }
 
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    background-color: var(--lightblue);
-    height: 5rem;
+.sticky {
+  background: var(--white);
+  padding: 10px 0;
+  box-shadow: 0px 3px 5px 0px var(--white);
+}
+
+.icon {
+  color: var(--darkblue);
+  font-size: 23px;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 868px) {
+  body.disabled {
+    overflow: hidden;
   }
-  .navbar .primary-icon {
-    height: 0.5rem;
+  .icon {
+    display: block;
   }
-  .navbar .nav-list {
-    list-style-type: none;
-    width: 100%;
-    position: absolute;
-    top: 5rem;
-    text-align: center;
+  .icon.hide {
     display: none;
-    padding: 0;
   }
-  .navbar .nav-list .list-item {
+  .navbar .menu-list {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    max-width: 400px;
+    left: -100%;
+    top: 0px;
     display: block;
-    background-color: var(--lightblue);
+    padding: 40px 0;
+    text-align: center;
+    background: var(--lightblue);
+    transition: all 0.3s ease;
   }
-  .navbar .active {
-    display: block;
-    z-index: 100;
+  .navbar .menu-list li {
+    margin-top: 45px;
   }
-  .navbar .menu {
-    display: block;
-    position: absolute;
-    right: 15px;
-    top: 25px;
+  .navbar .menu-list a {
+    font-size: 23px;
+    margin-left: -100%;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .navbar.show .menu-list {
+    left: 0%;
+  }
+  .navbar.show .menu-list li a {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 380px) {
+  .navbar .logo a {
+    font-size: 27px;
   }
 }
 .slider {

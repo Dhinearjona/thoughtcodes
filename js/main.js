@@ -1,19 +1,20 @@
-var sidemenu = document.getElementById("sidemenu");
-
-function openmenu() {
-	sidemenu.style.right = "0";
+const body = document.querySelector("body");
+const navbar = document.querySelector(".navbar");
+const menuBtn = document.querySelector(".menu-btn");
+const cancelBtn = document.querySelector(".cancel-btn");
+menuBtn.onclick = ()=>{
+    navbar.classList.add("show");
+    menuBtn.classList.add("hide");
+    body.classList.add("disabled");
 }
-
-function closemenu() {
-	sidemenu.style.right = "-500px";
+cancelBtn.onclick = ()=>{
+    body.classList.remove("disabled");
+    navbar.classList.remove("show");
+    menuBtn.classList.remove("hide");
 }
-
-const toggleButton = document.getElementById('toggle-button');
-const navlist = document.getElementById('nav-list');
-
-toggleButton.addEventListener('click', () => {
-	navlist.classList.toggle('active');
-});
+window.onscroll = ()=>{
+    this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+}
 
 var counter = 1;
 setInterval(function(){

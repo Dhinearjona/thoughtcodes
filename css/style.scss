@@ -73,72 +73,68 @@
     color: var(--darkblue);
     font-size: 23px;
     cursor: pointer;
+}
+
+body.disabled{
+    overflow: hidden;
+}
+
+.icon{
+    display: block;
+}
+
+.icon.hide{
     display: none;
 }
 
-@media (max-width: 868px) {
-    body.disabled{
-        overflow: hidden;
+.navbar {
+
+    .content {
+        padding: 5px 15px;
     }
 
-    .icon{
+    .menu-list {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        max-width: 400px;
+        left: -100%;
+        top: 0px;
         display: block;
-    }
-    
-    .icon.hide{
-        display: none;
-    }
+        padding: 40px 0;
+        text-align: center;
+        background: var(--lightblue);
+        transition: all 0.3s ease;
 
-    .navbar {
-
-        .content {
-            padding: 5px 15px;
+        li {
+            margin-top: 40px;
         }
 
-        .menu-list {
-            position: fixed;
-            height: 100vh;
-            width: 100%;
-            max-width: 400px;
-            left: -100%;
-            top: 0px;
-            display: block;
-            padding: 40px 0;
-            text-align: center;
-            background: var(--lightblue);
-            transition: all 0.3s ease;
-
-            li {
-                margin-top: 45px;
-            }
-
-            a {
-                font-size: 23px;
-                margin-left: -100%;
-                transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-            }
+        a {
+            font-size: 23px;
+            margin-left: -100%;
+            transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
         }
-    }
-
-    .navbar.show .menu-list{
-        left: 0%;
-    }
-
-    .navbar.show .menu-list li a{
-        margin-left: 0px;
     }
 }
 
-@media (max-width: 380px) {
-    .navbar .logo a{
-        font-size: 27px;
-    }
+.navbar.show .menu-list{
+    left: 0%;
+}
+
+.navbar.show .menu-list li a{
+    margin-left: 0px;
+}
+
+
+.navbar .logo a{
+    font-size: 27px;
 }
 
 .slider {
 	width: 100%;
     height: 100vh;
-    padding-top: 5rem;
+    padding-top: 3rem;
 	border-radius: 10px;
 	overflow: hidden;
 }
@@ -486,7 +482,8 @@
         .work-img {
 
             img {
-                width: 20rem;
+                width: 30rem;
+                height: 20rem;
             }
         }
     }
@@ -551,14 +548,6 @@
 @media (max-width: 768px) {
     .customers {
         padding: 3rem 3%;
-    }
-}
-
-.maps {
-
-    iframe {
-        width: 100%;
-        height: 50vh;
     }
 }
 

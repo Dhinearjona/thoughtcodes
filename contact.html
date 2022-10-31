@@ -13,39 +13,26 @@
 </head>
 <body>
     <nav class="navbar">
-        <div>
-            <a href="#">
-            <img class="primary-icon" src="logo.png" />
-            </a>
-        </div>
-        <ul class="nav-list" id="nav-list">
-            <li class="list-item">
-                <a href="index.html">Home</a>
-            </li>
-            <li class="list-item">
-                <a href="about.html">About</a>
-            </li>
-            <li class="list-item">
-                <a href="services.html">Our Services</a>
-            </li>
-            <li class="list-item">
-                <a href="clients.html">Clients</a>
-            </li>
-            <li class="list-item">
-                <a href="partners.html">Partners</a>
-            </li>
-            <li class="list-item">
-                <a href="news.html">News</a>
-            </li>
-            <li class="list-item">
-                <a href="careers.html">Careers</a>
-            </li>
-            <li class="list-item">
-                <a href="contact.html" class="active">Contact Us</a>
-            </li>
-        </ul>
-        <div class="menu" id="toggle-button">
-            <i class="fa-solid fa-bars"></i>
+        <div class="content">
+            <div class="logo">
+                <a href="#"><img src="logo.png" /></a>
+            </div>
+            <ul class="menu-list">
+                <div class="icon cancel-btn">
+                <i class="fas fa-times"></i>
+                </div>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="clients.html">Clients</a></li>
+                <li><a href="partners.html">Partners</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="icon menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
     </nav>
 
@@ -56,20 +43,32 @@
         </div>
         <div class="forms">
             <form action="">
-                <h1>Get in Touch</h1>
-                <input type="text" name="name" placeholder="Name">
-                <br><input type="email" name="email" placeholder="Email">
-                <br><textarea name="message" id="textarea" cols="30" rows="10" placeholder="Message"></textarea>
-                <br><a href="#">Submit</a>
-                <p>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
-            </form>
+                <form>
+                    <h1>Get in Touch</h1>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="form-control" placeholder="Name" name="name">
+                    </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="form-control" placeholder="Email Address" name="email">
+                    </div>
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" name="textarea"></textarea>
+                        <label for="floatingTextarea2">Leave your concern here.</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
             <div class="side-forms">
                 <p>Get along with us on the below given details
-                    <br>4705 Eisenhower Ave Ste A Alexandria, VA 22304
+                    <br><b>4705 Eisenhower Ave Ste A Alexandria, VA 22304</b>
                 <br>info@thoughtcodes.com</p>
             </div>
         </div>
     </div>
+
+    <div class="maps">
+        <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=4705%20Eisenhower%20Ave%20Ste%20A%20Alexandria,%20VA%2022304&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+    </div>
+
 
     <div class="footer">
         <div class="foot">

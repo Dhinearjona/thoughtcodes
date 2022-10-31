@@ -66,59 +66,61 @@
   color: var(--darkblue);
   font-size: 23px;
   cursor: pointer;
+}
+
+body.disabled {
+  overflow: hidden;
+}
+
+.icon {
+  display: block;
+}
+
+.icon.hide {
   display: none;
 }
 
-@media (max-width: 868px) {
-  body.disabled {
-    overflow: hidden;
-  }
-  .icon {
-    display: block;
-  }
-  .icon.hide {
-    display: none;
-  }
-  .navbar .content {
-    padding: 5px 15px;
-  }
-  .navbar .menu-list {
-    position: fixed;
-    height: 100vh;
-    width: 100%;
-    max-width: 400px;
-    left: -100%;
-    top: 0px;
-    display: block;
-    padding: 40px 0;
-    text-align: center;
-    background: var(--lightblue);
-    transition: all 0.3s ease;
-  }
-  .navbar .menu-list li {
-    margin-top: 45px;
-  }
-  .navbar .menu-list a {
-    font-size: 23px;
-    margin-left: -100%;
-    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  }
-  .navbar.show .menu-list {
-    left: 0%;
-  }
-  .navbar.show .menu-list li a {
-    margin-left: 0px;
-  }
+.navbar .content {
+  padding: 5px 15px;
 }
-@media (max-width: 380px) {
-  .navbar .logo a {
-    font-size: 27px;
-  }
+.navbar .menu-list {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  max-width: 400px;
+  left: -100%;
+  top: 0px;
+  display: block;
+  padding: 40px 0;
+  text-align: center;
+  background: var(--lightblue);
+  transition: all 0.3s ease;
 }
+.navbar .menu-list li {
+  margin-top: 40px;
+}
+.navbar .menu-list a {
+  font-size: 23px;
+  margin-left: -100%;
+  transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.navbar.show .menu-list {
+  left: 0%;
+}
+
+.navbar.show .menu-list li a {
+  margin-left: 0px;
+}
+
+.navbar .logo a {
+  font-size: 27px;
+}
+
 .slider {
   width: 100%;
   height: 100vh;
-  padding-top: 5rem;
+  padding-top: 3rem;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -377,7 +379,8 @@
   justify-content: space-between;
 }
 .work .work-life .work-img img {
-  width: 20rem;
+  width: 30rem;
+  height: 20rem;
 }
 .work .work-desc {
   margin: 0 1.5rem;
@@ -424,11 +427,6 @@
     padding: 3rem 3%;
   }
 }
-.maps iframe {
-  width: 100%;
-  height: 50vh;
-}
-
 .footer {
   justify-content: space-between;
   display: flex;

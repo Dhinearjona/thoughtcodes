@@ -173,21 +173,36 @@ body.disabled {
   color: var(--darkblue);
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1024px) and (min-width: 769px) {
+  .cover .forms {
+    padding: 5rem 5%;
+    justify-content: space-between;
+  }
+  .cover .side-forms p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
   .cover .forms {
     display: block;
-    padding: 0;
-    margin: 0 1rem;
-    text-align: center;
   }
   .cover .forms form input {
-    padding: 0.5rem 2.4rem;
+    width: 100%;
   }
   .cover .forms form textarea {
-    padding: 0.5rem 1rem;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .cover .forms {
+    padding: 1rem 5%;
   }
   .cover .forms .side-forms {
-    margin: 0 1rem;
+    margin: 0;
+  }
+  .cover .forms .side-forms p {
+    font-size: 12px;
+    line-height: 1.5rem;
   }
 }
 .maps iframe {

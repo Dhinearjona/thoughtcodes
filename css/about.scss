@@ -220,33 +220,6 @@ body.disabled{
     }
 }
 
-.customers {
-    text-align: center;
-    padding: 3rem 15%;
-
-    .customers-title {
-
-        h1 {
-            padding: 2rem 0;
-            font-weight: 700;
-            color: var(--darkblue);
-        }
-    }
-
-    .customers-img {
-
-        img {
-            margin: 1rem 1rem;
-        }
-    }
-}
-
-@media (max-width: 768px) {
-    .customers {
-        padding: 3rem 3%;
-    }
-}
-
 .footer {
     justify-content: space-between;
     display: flex;

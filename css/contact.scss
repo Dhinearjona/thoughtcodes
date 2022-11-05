@@ -24,7 +24,6 @@
     .content{
         max-width: 1250px;
         margin: auto;
-        padding: 20px 20px;
         display: flex;
         align-items: center;
         text-align: center;
@@ -32,7 +31,7 @@
     }
 
     img {
-        width: 50%;
+        width: 25%;
     }
 
     .menu-list {
@@ -65,7 +64,6 @@
 
 .sticky {
     background: var(--white);
-    padding: 10px 0;
     box-shadow: 0px 3px 5px 0px var(--white);
 }
 
@@ -88,10 +86,6 @@ body.disabled{
 }
 
 .navbar {
-
-    .content {
-        padding: 5px 15px;
-    }
 
     .menu-list {
         position: fixed;
@@ -131,8 +125,23 @@ body.disabled{
     font-size: 27px;
 }
 
+@media (max-width: 768px) {
+    .navbar {
+        padding: 1rem 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .navbar {
+
+        img {
+            width: 50%;
+        }
+    }
+}
+
 .cover {
-    padding-top: 3rem;
+    padding-top: 6rem;
 
     .cover-desc {
         text-align: center;
@@ -221,6 +230,7 @@ body.disabled{
 
 @media (max-width: 768px) {
     .cover {
+        padding-top: 5.3rem;
 
         .forms {
             display: block;
@@ -241,6 +251,7 @@ body.disabled{
 
 @media (max-width: 500px) {
     .cover {
+        padding-top: 4.6rem;
 
         .cover-desc {
 

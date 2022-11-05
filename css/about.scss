@@ -18,13 +18,13 @@
     position: fixed;
     width: 100%;
     z-index: 2;
-    padding: 0;
+    margin-top: -2rem;
+    padding: 0 1rem;
     transition: all 0.3s ease;
 
     .content{
         max-width: 1250px;
         margin: auto;
-        padding: 20px 20px;
         display: flex;
         align-items: center;
         text-align: center;
@@ -32,7 +32,7 @@
     }
 
     img {
-        width: 50%;
+        width: 25%;
     }
 
     .menu-list {
@@ -65,8 +65,8 @@
 
 .sticky {
     background: var(--white);
-    padding: 10px 0;
     box-shadow: 0px 3px 5px 0px var(--white);
+    margin-top: -2rem;
 }
 
 .icon{
@@ -88,10 +88,6 @@ body.disabled{
 }
 
 .navbar {
-
-    .content {
-        padding: 5px 15px;
-    }
 
     .menu-list {
         position: fixed;
@@ -131,8 +127,24 @@ body.disabled{
     font-size: 27px;
 }
 
+@media (max-width: 768px) {
+    .navbar {
+        margin-top: -1rem;
+        padding: 1rem 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .navbar {
+
+        img {
+            width: 50%;
+        }
+    }
+}
+
 .cover {
-    padding-top: 3rem;
+    padding-top: 5rem;
     margin: 3% 10%;
 
     .cover-desc {
@@ -190,6 +202,13 @@ body.disabled{
             overflow: hidden;
             transition: max-height 0.5s;
         }
+    }
+}
+
+@media (max-width: 768px) {
+    .cover {
+        padding: 3rem 0;
+        margin: 1rem 1rem;
     }
 }
 

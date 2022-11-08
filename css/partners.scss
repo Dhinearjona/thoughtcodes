@@ -148,106 +148,15 @@
             height: 50vh;
         }
     }
-
-    .cover-title {
-        width: 100%;
-        position: relative;
-        margin-top: -19%;
-
-        h1 {
-            margin: 3rem 0;
-            font-size: 64px;
-            color: var(--white);
-            text-transform: uppercase;
-            font-weight: 700;
-        }
-    }
-
-    .customers {
-
-        .customers-img {
-            margin-top: 8rem;
-        }
-    }
 }
 
-@media (max-width: 1024px) and (min-width: 769px) {
+@media (max-width: 500px) {
     .cover {
-    
-        .cover-title {
-            width: 100%;
-            position: relative;
-            margin-top: -25%;
-        }
 
-        .customers {
+        .cover-desc {
 
-            .customers-img {
-                margin-top: 2rem;
-            }
-        }
-    }
-}
-
-@media (max-width: 768px) {
-    .cover {
-    
-        .cover-title {
-            width: 100%;
-            position: relative;
-            margin-top: -32%;
-
-            h1 {
-                font-size: 48px;
-            }
-        }
-
-        .customers {
-
-            .customers-img {
-                margin-top: 8rem;
-            }
-        }
-    }
-}
-
-@media (max-width: 500px) and (min-width: 400px) {
-    .cover {
-    
-        .cover-title {
-            margin-top: -48%;
-
-            h1 {
-                font-size: 36px;
-            }
-        }
-
-        .customers {
-            padding: 1rem 1rem;
-
-            .customers-img {
-                margin-top: 4rem;
-            }
-        }
-    }
-}
-
-@media (max-width: 399px) {
-    .cover {
-    
-        .cover-title {
-            margin-top: -80%;
-
-            h1 {
-                font-size: 36px;
-            }
-        }
-
-        .customers {
-            padding: 1rem 1rem;
-
-            .customers-img {
-                margin-top: 4rem;
+            img {
+                height: 35vh;
             }
         }
     }
@@ -262,6 +171,18 @@
         img {
             margin: 1rem 1rem;
         }
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 769px) {
+    .customers {
+        padding: 1rem 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .customers {
+        padding: 1rem 1rem;
     }
 }
 
